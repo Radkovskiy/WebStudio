@@ -1,0 +1,107 @@
+/* цвет заголовков - #212121 */
+/* цвет текста - #757575 */
+/* цвет таргета - #2196F3 */
+/* цвет хиро/футера - #2F303A */
+/* белый - #FFFFFF */
+/* черный - #000000 */
+
+:root {
+    --title-color: #212121;
+    --text-color: #757575;
+    --target-color: #2196F3;
+    --hero_footer-color: #2F303A;
+}
+
+/* СКРЫТЬ ПРЕИМУЩЕСТВА - не выходит */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+body {
+    color: var(--text-color);
+}
+
+/* шапка */
+.header-logo {
+    color: #000000;
+}
+
+/* цвет навигации */
+.nav_header .nav_header-link {
+    color: var(--title-color);
+}
+
+/* контакты */
+.hcontacts .hcontact-link {
+    color: var(--text-color);
+}
+
+/* цвет таргета/фокуса навигации и контактов (не выходит у hcontact-link) - ебаная запятая */
+.nav_header .nav_header-link:hover,
+.nav_header .nav_header-link:focus,
+.hcontacts .hcontact-link:hover,
+.hcontacts .hcontact-link:focus {
+    color: var(--target-color);
+}
+
+/* фон оглавления */
+.hero {
+    background-color: var(--hero_footer-color);
+}
+
+/* оглавление */
+.hero-title {
+    color: #fff;
+}
+
+/* кнопка заказать услугу */
+.hero-button {
+    color: #fff;
+    background-color: var(--target-color);
+}
+ /* оглавление преимуществ */
+.benefits .benefits-title {
+    color: var(--title-color);
+}
+
+/* оглавление занятий */
+.doing-title {
+    color: var(--title-color);
+}
+
+/* Команда - не вышло, хз, почему
+.team .team-title.team-title-name {
+    color: var(--title-color );
+} */
+
+/* команда (попытка №2) */
+.team-title,
+.team-title-name {
+    color: var(--title-color);
+}
+
+/* футер */
+.footer {
+    background-color: var(--hero_footer-color)
+}
+.footer-logo {
+    color: #fff;
+}
+
+.fcontacts .fcontact-adress,
+.fcontacts .fcontact-link {
+    color: #fff;
+}
+
+.fcontacts .fcontact-link {
+    opacity: 0.6;
+}
