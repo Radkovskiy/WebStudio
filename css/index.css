@@ -6,102 +6,217 @@
 /* черный - #000000 */
 
 :root {
-    --title-color: #212121;
-    --text-color: #757575;
-    --target-color: #2196F3;
-    --hero_footer-color: #2F303A;
+  --title-color: #212121;
+  --text-color: #757575;
+  --target-color: #2196f3;
+  --hero_footer-color: #2f303a;
+  --portfolio_button-color: #f5f4fa;
 }
 
-/* СКРЫТЬ ПРЕИМУЩЕСТВА - не выходит */
+/* СКРЫТЬ ПРЕИМУЩЕСТВА */
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
 
 body {
-    color: var(--text-color);
+  color: var(--text-color);
+
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* шапка */
-.header-logo {
-    color: #000000;
+/* лого */
+.logo {
+  color: #000000;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.span_logo {
+  color: var(--target-color);
 }
 
-/* цвет навигации */
-.nav_header .nav_header-link {
-    color: var(--title-color);
+/* навигация */
+.nav_header-link {
+  color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* контакты */
-.hcontacts .hcontact-link {
-    color: var(--text-color);
+.hcontact-link {
+  color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-/* цвет таргета/фокуса навигации и контактов (не выходит у hcontact-link) - ебаная запятая */
-.nav_header .nav_header-link:hover,
-.nav_header .nav_header-link:focus,
-.hcontacts .hcontact-link:hover,
-.hcontacts .hcontact-link:focus {
-    color: var(--target-color);
+/* цвет навигации контактов */
+.fcontact-adress,
+.fcontact-link {
+  color: #fff;
+}
+
+.fcontact-link {
+  opacity: 0.6;
+}
+
+/* цвет таргета/фокуса навигации и контактов */
+.nav_header-link:hover,
+.nav_header-link:focus,
+.hcontact-link:hover,
+.hcontact-link:focus,
+.fcontact-adress:hover,
+.fcontact-adress:focus,
+.fcontact-link:hover,
+.fcontact-link:focus {
+  color: var(--target-color);
 }
 
 /* фон оглавления */
 .hero {
-    background-color: var(--hero_footer-color);
+  background-color: var(--hero_footer-color);
 }
 
-/* оглавление */
+/* оглавление - не совпадает значение жирности и фактическая жирность*/
 .hero-title {
-    color: #fff;
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* кнопка заказать услугу */
+/* кнопка заказать услугу - не центруется */
 .hero-button {
-    color: #fff;
-    background-color: var(--target-color);
-}
- /* оглавление преимуществ */
+  cursor: pointer;
+
+  color: #fff;
+  background-color: var(--target-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  }
+/* оглавление преимуществ */
 .benefits .benefits-title {
-    color: var(--title-color);
+  color: var(--title-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* оглавление занятий */
 .doing-title {
-    color: var(--title-color);
+  color: var(--title-color);
 }
 
-/* Команда - не вышло, хз, почему
-.team .team-title.team-title-name {
-    color: var(--title-color );
-} */
-
-/* команда (попытка №2) */
+/* команда (не совпадает значение жирности и фактическая жирность) */
 .team-title,
 .team-title-name {
-    color: var(--title-color);
+  color: var(--title-color);
+}
+
+.team-title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
 }
 
 /* футер */
 .footer {
-    background-color: var(--hero_footer-color)
+  background-color: var(--hero_footer-color);
 }
 .footer-logo {
-    color: #fff;
+  color: #fff;
 }
 
-.fcontacts .fcontact-adress,
-.fcontacts .fcontact-link {
-    color: #fff;
+/* Портфолио */
+
+.nav_header .active {
+  color: var(--target-color);
 }
 
-.fcontacts .fcontact-link {
-    opacity: 0.6;
+.portfolio_button {
+  cursor: pointer;
+
+  background-color: var(--portfolio_button-color);
+  color: var(--title-color);
+  border: none;
+}
+
+.portfolio_button:hover,
+.portfolio_button:focus {
+  background-color: var(--target-color);
+  color: #fff;
+}
+
+.link_name {
+  color: var(--title-color);
+
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.link_description {
+  color: var(--text-color);
+
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+
+  letter-spacing: 0.03em;
 }
