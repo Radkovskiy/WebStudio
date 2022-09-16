@@ -46,8 +46,6 @@ body {
 }
 
 h2 {
-  font-family: roboto, sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -61,7 +59,6 @@ h2 {
   color: #000000;
 
   font-family: Raleway;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
@@ -73,9 +70,6 @@ h2 {
 .nav_header-link {
   color: var(--title-color);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -83,9 +77,6 @@ h2 {
 .hcontact-link {
   color: var(--text-color);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -114,6 +105,7 @@ h2 {
 /* фон оглавления */
 .hero {
   background-color: var(--hero_footer-color);
+  text-align: center;
 }
 
 /* оглавление - не совпадает значение жирности и фактическая жирность*/
@@ -124,7 +116,7 @@ h2 {
   font-size: 44px;
   line-height: 1.4;
 
-  text-align: center;
+  
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -140,15 +132,13 @@ h2 {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  }
+}
 /* оглавление преимуществ */
 .benefits .benefits-title {
   color: var(--title-color);
 
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
