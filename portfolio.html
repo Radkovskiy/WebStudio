@@ -1,201 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header_div">
-        <a href="index.html" class="logo link">
-          <span class="span_logo">Web</span>Studio</a>
-        <nav class="main-nav">
-          <ul class="nav_header">
-            <li class="list">
-              <a href="#" class="nav_header-link link">Студия</a>
-            </li>
-            <li class="list">
-              <a href="portfolio.html" class="nav_header-link link portfolio_link">Портфолио</a>
-            </li>
-            <li class="list">
-              <a href="#" class="nav_header-link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="hcontacts">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header_div">
+      <a href="index.html" class="logo link">
+        <span class="span_logo">Web</span>Studio</a>
+      <nav class="main-nav">
+        <ul class="nav_header">
           <li class="list">
-            <a href="mailto:info@devstudio.com" class="hcontact-link link">info@devstudio.com</a>
+            <a href="index.html" class="nav_header-link link">Студия</a>
           </li>
           <li class="list">
-            <a href="tel:+380961111111" class="hcontact-link link">+38 096 111 11 11</a>
+            <a href="portfolio.html" class="nav_header-link link portfolio_link">Портфолио</a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav_header-link link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="hcontacts">
+        <li class="list">
+          <a class="hcontact-link mail link" href="mailto:info@devstudio.com">
+            <svg class="icon-envelope">
+              <use href="images/hw-4/symbol-defs.svg#icon-envelope"></use>
+            </svg> info@devstudio.com
+          </a>
+        </li>
+        <li class="list">
+          <a class="hcontact-link phone link" href="tel:+380961111111">
+            <svg class="icon-smartphone">
+              <use href="images/hw-4/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="portfolio_content section">
+      <div class="container nav_button">
+        <ul class="button-list">
+          <li class="list button-flex">
+            <button type="button" class="portfolio_button">Все</button>
+          </li>
+          <li class="list button-flex">
+            <button type="button" class="portfolio_button">Веб-сайты</button>
+          </li>
+          <li class="list button-flex">
+            <button type="button" class="portfolio_button">Приложения</button>
+          </li>
+          <li class="list button-flex">
+            <button type="button" class="portfolio_button">Дизайн</button>
+          </li>
+          <li class="list button-flex">
+            <button type="button" class="portfolio_button">Маркетинг</button>
           </li>
         </ul>
       </div>
-    </header>
-    <main>
-      <section class="portfolio_content">
-        <div class="container nav_button">
-          <ul class="button-list">
-            <li class="list button-flex">
-              <button type="button" class="portfolio_button">Все</button>
-            </li>
-            <li class="list button-flex">
-              <button type="button" class="portfolio_button">Веб-сайты</button>
-            </li>
-            <li class="list button-flex">
-              <button type="button" class="portfolio_button">Приложения</button>
-            </li>
-            <li class="list button-flex">
-              <button type="button" class="portfolio_button">Дизайн</button>
-            </li>
-            <li class="list button-flex">
-              <button type="button" class="portfolio_button">Маркетинг</button>
-            </li>
-          </ul>
-        </div>
-        <div class="container">
-          <ul class="link_list">
-            <li class="list flex-element">
-              <a href="#" class="link">
-                <img
-                  src="images/img_portfolio/tehno.jpg"
-                  alt="tehnoctyack"
-                  width="370"
-                />
-                <p class="link_name">Технокряк</p>
-                <p class="link_description">Веб-сайт</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/nohxgsw.jpg"
-                  alt="hortets x warriors"
-                  width="370"
-                />
-                <p class="link_name">Постер New Orlean vs Golden State</p>
-                <p class="link_description">Дизайн</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/seafood.jpg"
-                  alt="logoseafood"
-                  width="370"
-                />
-                <p class="link_name">Ресторан Seafood</p>
-                <p class="link_description">Приложение</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/headphones.jpg"
-                  width="370"
-                  alt="headphones"
-                />
-                <p class="link_name">Проект Prime</p>
-                <p class="link_description">Маркетинг</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/box.jpg"
-                  alt="boxes"
-                  width="370"
-                />
-                <p class="link_name">Проект Boxes</p>
-                <p class="link_description">Приложение</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/monoblock.jpg"
-                  alt="monoblock"
-                  width="370"
-                />
-                <p class="link_name">Inspiration has no Borders</p>
-                <p class="link_description">Веб-сайт</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/book.jpg"
-                  alt="book"
-                  width="370"
-                />
-                <p class="link_name">Издание Limited Edition</p>
-                <p class="link_description">Дизайн</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/labeltag.jpg"
-                  alt="labeltag"
-                  width="370"
-                />
-                <p class="link_name">Проект LAB</p>
-                <p class="link_description">Маркетинг</p></a
-              >
-            </li>
-            <li class="list flex-element">
-              <a href="#" class="link"
-                ><img
-                  src="images/img_portfolio/handinmac.jpg"
-                  width="370"
-                  alt="hands in mac"
-                />
-                <p class="link_name">Growing Business</p>
-                <p class="link_description">Приложение</p></a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
       <div class="container">
-        <a href="index.html" class="logo footer-logo link"
-          ><span class="span_logo">Web</span>Studio</a
-        >
+        <ul class="link_list">
+          <li class="list flex-element ">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/tehno.png" alt="tehnocrack" width="370" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Технокряк</p>
+                <p class="link_description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/nohxgsw.png" alt="hortets x warriors"
+                  width="370" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Постер NOH vs GSW</p>
+                <p class="link_description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/seafood.png" alt="logoseafood" width="370" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Ресторан Seafood</p>
+                <p class="link_description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/headphones.png" width="370" alt="headphones" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Проект Prime</p>
+                <p class="link_description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/box.png" alt="boxes" width="370" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Проект Boxes</p>
+                <p class="link_description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/monoblock.png" alt="monoblock" width="370" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Inspiration has no Borders</p>
+                <p class="link_description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/book.png" alt="book" width="370" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Издание Limited Edition</p>
+                <p class="link_description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/labeltag.png" alt="labeltag" width="370" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Проект LAB</p>
+                <p class="link_description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="list flex-element">
+            <a href="#" class="link card">
+              <div class="img-card">
+                <img class="portfolio_image" src="images/img_portfolio/handinmac.png" width="370" alt="hands in mac" />
+                <div class="card-overlay">
+                  <p class="description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
+              </div>
+              <div class="portfolio_list_border">
+                <p class="link_name">Growing Business</p>
+                <p class="link_description">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div>
+        <a href="index.html" class="logo footer-logo link"><span class="span_logo">Web</span>Studio</a>
         <ul class="fcontacts">
           <li class="list">
-            <a
-              href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjfh9eG5Yr6AhXvtYsKHV8GDU0Q8gF6BAgREAE"
-              class="fcontact-adress link"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
+            <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjfh9eG5Yr6AhXvtYsKHV8GDU0Q8gF6BAgREAE"
+              class="fcontact-adress link">г. Киев, пр-т Леси Украинки, 26</a>
           </li>
           <li class="list">
-            <a class="fcontact-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="fcontact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="list">
-            <a class="fcontact-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="fcontact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer-social_nw">
+        <p>Присоеденяйтесь</p>
+        <ul class="footer-nw-list">
+          <li class="list"> <a class="ft-soc_network" href="#">
+              <svg class="logo_inst ft-icon-target">
+                <use href="./images/hw-4/icons.svg#icon-logo_inst"></use>
+              </svg></a></li>
+          <li class="list"> <a class="ft-soc_network" href="#">
+              <svg class="logo_twitter ft-icon-target">
+                <use href="./images/hw-4/icons.svg#icon-logo_twitter"></use>
+              </svg></a></li>
+          <li class="list"> <a class="ft-soc_network" href="#">
+              <svg class="logo_facebook ft-icon-target">
+                <use href="./images/hw-4/icons.svg#icon-logo_facebook"></use>
+              </svg></a></li>
+          <li class="list"> <a class="ft-soc_network" href="#">
+              <svg class="logo_in ft-icon-target">
+                <use href="./images/hw-4/icons.svg#icon-logo_in"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
