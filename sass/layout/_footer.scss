@@ -1,0 +1,136 @@
+/* футер */
+
+.footer {
+  background-color: $hero_footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__div {
+  display: flex;
+}
+
+.contacts-wrapp {
+  margin-right: 70px;
+}
+
+.footer__contact {
+
+  &:hover,
+  &:focus {
+    color: $target-color;
+  }
+}
+
+.footer__contact-opacity {
+
+  &:hover,
+  &:focus {
+    color: $target-color;
+  }
+}
+
+.footerNetwork-wrapp {
+  margin-right: 93px;
+}
+
+.feedback__form {
+  display: flex;
+}
+
+.feedback__text {
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.feedback__input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: $hero_footer-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #fff;
+
+  &:focus {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+}
+
+
+
+.feedback__button {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  margin-right: 0;
+
+  background-color: $target-color;
+  border-color: $target-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid $target-color;
+  text-align: center;
+  cursor: pointer;
+
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px 29px;
+
+  &:active {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin-left: 10px;
+}
+
+/* лого */
+.logo-white {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.join {
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+}
+
+.footer-network {
+  justify-content: flex-start;
+
+}
+
+.footer-network__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #fff;
+}

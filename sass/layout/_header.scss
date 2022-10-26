@@ -1,0 +1,174 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/* шапка */
+.header-wrapp {
+  display: flex;
+  align-items: center
+}
+
+.header {
+  border-bottom: $border-color solid 1px;
+}
+
+/* лого */
+.logo {
+  margin-left: 0;
+  color: #000000;
+
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.span_logo {
+  color: $target-color;
+}
+
+/* навигация */
+.nav__list,
+.contacts {
+  display: flex;
+}
+
+.nav-mleft {
+  margin-left: 93px;
+}
+
+.nav__list .list+.list {
+  margin-left: 50px;
+}
+
+.nav__link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  letter-spacing: 0.02em;
+
+  color: $title-color;
+  font-weight: 500;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $target-color;
+  }
+}
+
+
+/* хз, или правильно, но вышло прикольно
+  не првильно - полоска не кликабельна */
+/* .emphasize {
+    display: block;
+    width: 100%;
+    border: 2px solid $target-color;
+    border-radius: 2px;
+  } */
+
+/* контакты */
+.contacts {
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.contacts-mleft {
+  margin-left: auto;
+}
+
+.contacts .list:last-child {
+  margin-left: 50px;
+}
+
+.contacts__link-mail {
+  display: flex;
+  align-items: center;
+
+  &:hover .icon-envelope,
+  &:focus .icon-envelope {
+    fill: $target-color;
+  }
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 32px;
+  margin-right: 10px;
+  align-items: center;
+  fill: $text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link-phone {
+  display: flex;
+  align-items: center;
+
+  &:hover .icon-smartphone,
+  &:focus .icon-smartphone {
+    fill: $target-color;
+  }
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: $text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link {
+  color: $text-color;
+
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $target-color;
+  }
+}
+
+/* цвет навигации контактов */
+.footer__contact,
+.footer__contact-opacity {
+  color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__contact-opacity {
+  opacity: 0.6;
+}
+
+/* цвет таргета/фокуса навигации и контактов */
+
+
+.nav__link-active {
+  color: $target-color;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    border: 2px solid $target-color;
+    border-radius: 2px;
+  }
+}

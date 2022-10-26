@@ -1,0 +1,56 @@
+.doing {
+  padding-top: 94px;
+}
+
+/* оглавление занятий */
+.doing-list {
+    padding-bottom: 94px;
+  }
+  
+  .doing__title {
+    color: $title-color;
+    padding-bottom: 50px;
+  }
+  
+  .doing-list {
+    display: flex;
+  }
+  
+  .doing .list:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .doing-list__wrap {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* лишка и див, в который я оборачиваю картинку больше самой картинки,
+  отступил 7пк бот на глаз!!
+  дал картинкам глобально дисплей блок */
+  .doing-list__overlay {
+    position: absolute;
+    bottom: 0;
+  
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: rgba(47, 48, 58, 0.8);
+  }
+  
+  /* лектор говорил, что позиция дружит с флекс боксами и через
+  жустивай и алайн можно задавать позицию, если элемент является флексовым,
+  но текст центрировался только тогда, когда я убрал позишн абсолют. почему?
+  
+  ответ: потому, что позиция, которую я задаю этому классу перебивает 
+  настройки, которые я задал флекс боксу предка? */
+  .doing-list__text {
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+  }
