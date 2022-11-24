@@ -1,136 +1,261 @@
-/* футер */
-
 .footer {
-  background-color: $hero_footer-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
+    background-color: $hero_footer-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer__div {
-  display: flex;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts-wrapp {
-  margin-right: 70px;
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
 }
 
-.footer__contact {
-
-  &:hover,
-  &:focus {
-    color: $target-color;
-  }
+.footer-contacts__list {
+    margin-top: 20px;
 }
 
-.footer__contact-opacity {
-
-  &:hover,
-  &:focus {
-    color: $target-color;
-  }
+.footer-contacts__item:not(:last-child) {
+    margin-bottom: 8px;
 }
 
-.footerNetwork-wrapp {
-  margin-right: 93px;
+/* цвет навигации контактов */
+.footer-contacts__link {
+    color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: $target-color;
+    }
 }
+
+.footer-contacts__link-opacity {
+    color: #fff;
+    opacity: 0.6;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: $target-color;
+    }
+}
+
+
+
 
 .feedback__form {
-  display: flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* лого */
+.logo-white {
+    display: inline-block;
+    color: #fff;
+}
+
+.join {
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.footer-network {
+    justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-network__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #fff;
 }
 
 .feedback__text {
-  color: #fff;
+    color: #fff;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
 
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback__label {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
 }
 
 .feedback__input {
-  width: 358px;
-  height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  background-color: $hero_footer-color;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  color: #fff;
-
-  &:focus {
+    width: 100%;
+    display: block;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: $hero_footer-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    outline: none;
-  }
+    border-radius: 4px;
+    color: #fff;
+
+    &:focus {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        outline: none;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 }
+
+
 
 
 
 .feedback__button {
-  display: inline-flex;
-  width: 200px;
-  height: 50px;
-  margin-left: 12px;
-  margin-right: 0;
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    margin-right: 0;
 
-  background-color: $target-color;
-  border-color: $target-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 1px solid $target-color;
-  text-align: center;
-  cursor: pointer;
+    background-color: $target-color;
+    border-color: $target-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid $target-color;
+    text-align: center;
+    cursor: pointer;
 
-  color: #fff;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  padding: 10px 29px;
+    color: #fff;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 29px;
 
-  &:active {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-  }
+    &:active {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
 }
 
 
 
 .icon-send {
-  width: 24px;
-  height: 24px;
-  fill: #fff;
-  margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    margin-left: 10px;
 }
 
-/* лого */
-.logo-white {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #fff;
+@media screen and (min-width: 768px) {
+    .footer__div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contacts-wrapp {
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+
+    .feedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .feedback__form {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .feedback__button {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-.join {
-  color: #fff;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 
-  margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+    .footer__div {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: baseline;
+    }
 
-}
+    .contacts-wrapp {
+        margin: 0;
+        margin-right: 76px;
+        text-align: start;
+    }
 
-.footer-network {
-  justify-content: flex-start;
+    .footerNetwork-wrapp {
+        margin-right: 93px;
+    }
 
-}
+    .footerNetwork-wrapp .join {
+        text-align: start;
+    }
 
-.footer-network__link {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #fff;
+    .feedback {
+        justify-content: flex-start;
+    }
+
+    .feedback__label {
+        width: 358px;
+        margin-right: 12px;
+    }
+
+    .feedback__text {
+        text-align: start;
+    }
+
+    .footer-network {
+        justify-content: start;
+    }
+
+    .feedback__form {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .feedback__input {
+        width: 358px;
+    }
+
+    .feedback__button {
+        margin-left: 0;
+    }
+
 }

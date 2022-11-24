@@ -17,37 +17,46 @@
 
 <body>
   <header class="header">
-    <div class="header-wrapp container">
-      <a href="index.html" class="logo link">
+    <div class="container header-wrapp">
+      <a href="index.html" class="header-logo logo link">
         <span class="span_logo">Web</span>Studio</a>
-      <nav class="nav nav-mleft">
-        <ul class="nav__list">
-          <li class="list">
-            <a href="index.html" class="nav__link link">Студия</a>
+      <button data-menu-button aria-expanded="false" aria-controls="menu-container" type="button"
+        class="menu-button is-open">
+        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+          <use class="icon-close" href="./images/svg_icons/icons.svg#icon-close"></use>
+          <use class="icon-menu" href="./images/svg_icons/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu-container" id="menu-container" data-menu>
+        <nav class="nav nav-wrapp">
+          <ul class="nav__list">
+            <li class="nav__item list">
+              <a href="index.html" class="nav__link link">Студия</a>
+            </li>
+            <li class="nav__item list">
+              <a href="portfolio.html" class="nav__link link nav__link-active">Портфолио</a>
+            </li>
+            <li class="nav__item list">
+              <a href="test.html" class="nav__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts contacts-mleft">
+          <li class="contacts__item list">
+            <a class="contacts__link contacts__link-mail link" href="mailto:info@devstudio.com">
+              <svg class="icon-envelope">
+                <use href="images/svg_icons/icons.svg#icon-envelope"></use>
+              </svg> info@devstudio.com
+            </a>
           </li>
-          <li class="list">
-            <a href="portfolio.html" class="nav__link link nav__link-active">Портфолио</a>
-          </li>
-          <li class="list">
-            <a href="test.html" class="nav__link link">Контакты</a>
+          <li class="contacts__item list">
+            <a class="contacts__link contacts__link-phone link" href="tel:+380961111111">
+              <svg class="icon-smartphone">
+                <use href="images/svg_icons/icons.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contacts contacts-mleft">
-        <li class="list">
-          <a class="contacts__link contacts__link-mail link" href="mailto:info@devstudio.com">
-            <svg class="icon-envelope">
-              <use href="images/svg_icons/icons.svg#icon-envelope"></use>
-            </svg> info@devstudio.com
-          </a>
-        </li>
-        <li class="list">
-          <a class="contacts__link contacts__link-phone link" href="tel:+380961111111">
-            <svg class="icon-smartphone">
-              <use href="images/svg_icons/icons.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
 
@@ -78,9 +87,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/tehno.png" alt="tehnocrack" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_tehno@1x.jpg 1x, ./images/img_portfolio/desktop/d_tehno@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_tehno@1x.jpg 1x, ./images/img_portfolio/tablet/t_tehno@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_tehno@1x.jpg 1x, ./images/img_portfolio/mobile/m_tehno@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_tehno@1x.jpg" alt="tehnocrack" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -94,10 +116,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/nohxgsw.png" alt="hortets x warriors"
-                  width="370" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_nohxgsw@1x.jpg 1x, ./images/img_portfolio/desktop/d_nohxgsw@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_nohxgsw@1x.jpg 1x, ./images/img_portfolio/tablet/t_nohxgsw@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_nohxgsw@1x.jpg 1x, ./images/img_portfolio/mobile/m_nohxgsw@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_nohxgsw@1x.jpg" alt="hornets x warriors" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -111,9 +145,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/seafood.png" alt="logoseafood" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_seafood@1x.jpg 1x, ./images/img_portfolio/desktop/d_seafood@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_seafood@1x.jpg 1x, ./images/img_portfolio/tablet/t_seafood@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_seafood@1x.jpg 1x, ./images/img_portfolio/mobile/m_seafood@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_seafood@1x.jpg" alt="logoseafood" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -127,9 +174,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/headphones.png" width="370" alt="headphones" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_headphones@1x.jpg 1x, ./images/img_portfolio/desktop/d_headphones@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_headphones@1x.jpg 1x, ./images/img_portfolio/tablet/t_headphones@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_headphones@1x.jpg 1x, ./images/img_portfolio/mobile/m_headphones@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_headphones@1x.jpg" alt="headphones" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -143,9 +203,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/box.png" alt="boxes" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_box@1x.jpg 1x, ./images/img_portfolio/desktop/d_box@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_box@1x.jpg 1x, ./images/img_portfolio/tablet/t_box@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_box@1x.jpg 1x, ./images/img_portfolio/mobile/m_box@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_box@1x.jpg" alt="boxes" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -159,9 +232,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/monoblock.png" alt="monoblock" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_monoblock@1x.jpg 1x, ./images/img_portfolio/desktop/d_monoblock@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_monoblock@1x.jpg 1x, ./images/img_portfolio/tablet/t_monoblock@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_monoblock@1x.jpg 1x, ./images/img_portfolio/mobile/m_monoblock@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_monoblock@1x.jpg" alt="monoblock" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -175,9 +261,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/book.png" alt="book" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_labeltag@1x.jpg 1x, ./images/img_portfolio/desktop/d_labeltag@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_labeltag@1x.jpg 1x, ./images/img_portfolio/tablet/t_labeltag@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_labeltag@1x.jpg 1x, ./images/img_portfolio/mobile/m_labeltag@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_labeltag@1x.jpg" alt="labeltag" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -191,9 +290,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/labeltag.png" alt="labeltag" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_tehno@1x.jpg 1x, ./images/img_portfolio/desktop/d_tehno@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_tehno@1x.jpg 1x, ./images/img_portfolio/tablet/t_tehno@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_tehno@1x.jpg 1x, ./images/img_portfolio/mobile/m_tehno@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_tehno@1x.jpg" alt="tehnocrack" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -207,9 +319,22 @@
           <li class="content__item list">
             <a href="#" class="card link">
               <div class=" card__wrap">
-                <img class="card__image" src="images/img_portfolio/handinmac.png" width="370" alt="hands in mac" />
+                <picture>
+                  <source
+                    srcset="./images/img_portfolio/desktop/d_handinmac@1x.jpg 1x, ./images/img_portfolio/desktop/d_handinmac@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source
+                    srcset="./images/img_portfolio/tablet/t_handinmac@1x.jpg 1x, ./images/img_portfolio/tablet/t_handinmac@2x.jpg 2x"
+                    media="(min-width: 768px" />
+                  <source
+                    srcset="./images/img_portfolio/mobile/m_handinmac@1x.jpg 1x, ./images/img_portfolio/mobile/m_handinmac@2x.jpg 2x"
+                    media="(max-width: 767px" />
+
+                  <img src="./images/img_portfolio/mobile/m_handinmac@1x.jpg" alt="hands in mac" width="350">
+                </picture>
                 <div class="card__image--overlay">
-                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  <p class="card__image--description">Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и
                     сервисов. Все это позволит
                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -228,16 +353,16 @@
     <div class="footer__div container">
       <div class="contacts-wrapp">
         <a href="index.html" class="logo logo-white link"><span class="span_logo">Web</span>Studio</a>
-        <ul>
-          <li class="list">
+        <ul class="footer-contacts__list">
+          <li class="footer-contacts__item list">
             <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjfh9eG5Yr6AhXvtYsKHV8GDU0Q8gF6BAgREAE"
-              class="footer__contact link">г. Киев, пр-т Леси Украинки, 26</a>
+              class="footer-contacts__link link">г. Киев, пр-т Леси Украинки, 26</a>
           </li>
-          <li class="list">
-            <a class="footer__contact-opacity link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="footer-contacts__item list">
+            <a class="footer-contacts__link-opacity link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="list">
-            <a class="footer__contact-opacity link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="footer-contacts__item list">
+            <a class="footer-contacts__link-opacity link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -279,7 +404,7 @@
       <div class="feedback">
         <p class="feedback__text">Подпишитесь на рассылку</p>
         <form class="feedback__form">
-          <label>
+          <label class="feedback__label">
             <input type="email" name="mailing_list" placeholder="E-mail" class="feedback__input">
           </label>
           <button type="button" class="feedback__button">Подписаться
@@ -292,6 +417,7 @@
 
     </div>
   </footer>
+  <script src="./js/menu.js "></script>
 </body>
 
 </html>
